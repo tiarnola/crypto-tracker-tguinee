@@ -1,6 +1,6 @@
 import React from 'react';
 import './Coin.css';
-
+//import Form from './Form';
 const Coin = ({
   name,
   price,
@@ -8,9 +8,13 @@ const Coin = ({
   marketcap,
   volume,
   image,
-  priceChange
+  priceChange,
+  currencySymbol
+  
 }) => {
   return (
+
+    
     <div className='coin-container'>
       <div className='coin-row'>
         <div className='coin'>
@@ -19,8 +23,8 @@ const Coin = ({
           <p className='coin-symbol'>{symbol}</p>
         </div>
         <div className='coin-data'>
-          <p className='coin-price'>${price}</p>
-          <p className='coin-volume'>${volume.toLocaleString()}</p>
+          <p className='coin-price'>{currencySymbol}{price}</p>
+          <p className='coin-volume'>{currencySymbol}{volume.toLocaleString()}</p>
 
           {priceChange < 0 ? (
             <p className='coin-percent red'>{priceChange.toFixed(2)}%</p>
@@ -29,7 +33,7 @@ const Coin = ({
           )}
 
           <p className='coin-marketcap'>
-            Mkt Cap: ${marketcap.toLocaleString()}
+            Mkt Cap: {currencySymbol}{marketcap.toLocaleString()}
           </p>
         </div>
       </div>

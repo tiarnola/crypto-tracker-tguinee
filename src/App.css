@@ -25,6 +25,14 @@
   align-content: center;
 }
 
+.coin-select {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
 .coin-text {
   margin-bottom: 32px;
   text-align: center;
@@ -38,13 +46,15 @@
   border: none;
   background-image: linear-gradient(
     -225deg,
-    #ac32e4 0%,
-    #7918f2 48%,
-    #4801ff 100%
+    #1d3518 0%,
+    #23f218 70%,
+    #ddff01 100%
   );
 
   color: #e2e2e2;
 }
+
+
 
 .coin-input::placeholder {
   color: #e2e2e2;
