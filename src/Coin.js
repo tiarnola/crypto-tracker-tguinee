@@ -11,11 +11,22 @@ const Coin = ({
   priceChange,
   currencySymbol
   
+  
 }) => {
+
+  
+   const root = document.querySelector('#root');
+   //  ReactDOM.render(<Form />, root );
   return (
 
+<div>
+    
+    
+    
     
     <div className='coin-container'>
+
+      
       <div className='coin-row'>
         <div className='coin'>
           <img src={image} alt='crypto' />
@@ -23,8 +34,8 @@ const Coin = ({
           <p className='coin-symbol'>{symbol}</p>
         </div>
         <div className='coin-data'>
-          <p className='coin-price'>{currencySymbol}{price}</p>
-          <p className='coin-volume'>{currencySymbol}{volume.toLocaleString()}</p>
+          <p className='coin-price'>{currencySymbol+" "}{price}</p>
+          <p className='coin-volume'>{currencySymbol+" "}{volume.toLocaleString()}</p>
 
           {priceChange < 0 ? (
             <p className='coin-percent red'>{priceChange.toFixed(2)}%</p>
@@ -33,10 +44,11 @@ const Coin = ({
           )}
 
           <p className='coin-marketcap'>
-            Mkt Cap: {currencySymbol}{marketcap.toLocaleString()}
+            Mkt Cap: {currencySymbol+" "}{marketcap.toLocaleString()}
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
