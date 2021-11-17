@@ -1,6 +1,6 @@
 {
-  "name": "updated-crypto-app",
-  "homepage":"https://tiarnola.github.io/updated-crypto-app",
+  "name": "crypto-tracker-tguinee",
+  "homepage":"https://tiarnola.github.io/crypto-tracker-tguinee",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
