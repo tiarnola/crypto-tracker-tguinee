@@ -1,6 +1,6 @@
 {
-  "name": "new-crypto-app",
-  "homepage":"https://tiarnola.github.io/new-crypto-app",
+  "name": "updated-crypto-app",
+  "homepage":"https://tiarnola.github.io/updated-crypto-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
