@@ -15,12 +15,12 @@ const Form = props => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>
-            <input type="radio" value="male" checked={gender == 'male'} 
+            <input type="radio" value="male" checked={gender === 'male'} 
                    onChange={handleChange} />
             <span>Male</span>
           </label>
           <label>
-            <input type="radio" value="female" checked={gender == 'female'} 
+            <input type="radio" value="female" checked={gender === 'female'} 
                    onChange={handleChange} />
             <span>Female</span>
           </label>
